@@ -36,9 +36,6 @@ Now press `enter`.
 Surprise✨This message might have showed up because you have not logged into this server before, but do not fret!
 
 ```
-$ ssh cs15lwi23zz@ieng6.ucsd.edu
-The authenticity of host 'ieng6.ucsd.edu (128.54.70.227)' can't be established.
-RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? 
 ```
 Just type `yes`, press `Enter`, and paste your account password.  
