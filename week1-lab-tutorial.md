@@ -29,7 +29,7 @@ With the `Git Bash` terminal in VSCode, type `ssh` and copy your course-specifie
 
 Your command should look similar to this: `$ ssh cs15lwi23zz@ieng6.ucsd.edu`. **On your end notice**: in place of `zz` the last letters are different.  
 
-*DO NOT copy and paste the above command.*
+> *DO NOT copy and paste the above command.*
 
 Now press `enter`. 
 
