@@ -6,7 +6,7 @@ Step 1. Install VSCode, if it is not already on the computer you are using.
 
 **For new VSCode users**
 
-After installing, the screen you will see is going to be blank with a few example commands like *Ctrl + `*
+> After installing, the screen you will see is going to be blank with a few example commands like *Ctrl + `*
 
 
 Here is what the VSCode startup screen might look like if you already have VSCode installed before this tutorial. 
