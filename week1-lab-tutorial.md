@@ -46,12 +46,12 @@ Success! Now your computer (the client) is connected to the server.
 ## Step 4. 
 Run some commands
 
-- `cd`
+- `cd` - means change directory! As shown in the picture, it is important to type `cd` followed by a path (any will do), or else, the command by itself does nothing.  
 - `cd ~`
-- `ls`
+- `ls` - This command lists files and folder in the current directory.  In the image, `ls` yields a listed file, hello.txt, and per15.  
 - `ls -lat`
 - `ls -a`
-- `pwd`
+- `pwd` - means print working directory and no path is needed for this command to print. It displays the absolute path, where you are in a filesystem - so you won't get lost!  
 
 Example of outputs.![running commands](https://user-images.githubusercontent.com/120623425/212244719-59d8f50c-a7a7-47c9-b8cf-8cbc5cc9e962.png)
 
