@@ -3,6 +3,42 @@
 # Part 1
 These screenshots show outputs from the StringServer's method with the path `/add-message?s=<string>`. 
 
+The code for StringServer:
+
+```
+import java.io.IOException;
+import java.net.URI;
+import java.util.ArrayList;
+
+class Handler implements URLHandler {
+    String print = "";
+    
+    public String handleRequest(URI url) {
+            if (url.getPath().contains("/add-message")) {
+                String[] parameters = url.getQuery().split("=");
+                if (parameters[0].equals("s")) {
+                    print += parameters[1] + "\n";
+                    return print;
+                }
+            }
+            return "404 Not Found!";
+        }
+    }
+
+
+class StringServer {
+    public static void main(String[] args) throws IOException {
+        if(args.length == 0){
+            System.out.println("Missing port number! Try any number between 1024 to 49151");
+            return;
+        }
+
+        int port = Integer.parseInt(args[0]);
+        Server.start(port, new Handler());
+    }
+}
+```
+
 Below is the "first" input `http://localhost:4000/add-message?s=-------------`   
 ![lab - string server first input](https://user-images.githubusercontent.com/120623425/215392668-b22e25c0-fcc1-47d6-b20f-2bc11d7fdaeb.png)
 > * The method handleRequest(URI url) is called and it returns a String
