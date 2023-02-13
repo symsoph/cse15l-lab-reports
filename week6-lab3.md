@@ -2,7 +2,7 @@ Exploring the `grep` Command
 ----------------------------
 
 In this lab report, I will listing **4** ways to use `grep` and give examples using the `./written_2/` directory and its files.
-Information from [Docs Oracle](https://docs.oracle.com/cd/E19253-01/806-7612/filesearch-96061/index.html) and `grep --help`.
+Information from [Docs Oracle](https://docs.oracle.com/cd/E19253-01/806-7612/filesearch-96061/index.html), [GNU](https://www.gnu.org/savannah-checkouts/gnu/grep/manual/grep.html) and `grep --help`.
 
 
 > 📌1. Searching in a File
@@ -119,7 +119,7 @@ This is useful if one only knew the desired term to be searched and the main dir
 
 > 📌4. Using Dashes and Letters
 
-For this last round of examples, I am in the `written_2` directory and am using help from [GNU](https://www.gnu.org/savannah-checkouts/gnu/grep/manual/grep.html)
+For this last round of examples, I am in the `written_2` directory and am using help from [GNU.](https://www.gnu.org/savannah-checkouts/gnu/grep/manual/grep.html)
 
 
 **Example 1**
