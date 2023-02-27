@@ -11,7 +11,7 @@ Keys pressed: `<up><up>, <enter>`
 I recently used the ssh ieng6 command, so I used the up arrows and `ssh cs15lwi23afq@ieng6.ucsd.edu` was 2 up in search history.
 
 2. Clone your fork of the repository from your Github account.
-   ![image](https://user-images.githubusercontent.com/120623425/221470378-64f81ab8-116a-421b-8d3e-f666aa9fc2d8.png)
+![image](https://user-images.githubusercontent.com/120623425/221470378-64f81ab8-116a-421b-8d3e-f666aa9fc2d8.png)
 ![image](https://user-images.githubusercontent.com/120623425/221470482-4df5433c-e1dc-4da5-9c01-8baddc51e0b9.png)
   
   Keys pressed: `<Ctrl+R>, <type "ss">, <enter>`
@@ -21,7 +21,7 @@ I ran this lab before so I knew that I logged into my Github account from my ien
     Then I needed to clone the repository from my Github, so I searched for the command `git clone git@github.com:symsoph/lab7` with `<Ctrl+R>`
     
 3. Run the tests, demonstrating that they fail.
- ![image](https://user-images.githubusercontent.com/120623425/221471087-368b5d81-4faa-4a9a-9790-80f5cb7221c4.png)
+![image](https://user-images.githubusercontent.com/120623425/221471087-368b5d81-4faa-4a9a-9790-80f5cb7221c4.png)
 
 
 Keys pressed: `<type "cd la">, <tab>, <enter>` Then `<Ctrl+R>, <type "javac">, <enter>` Next `<Ctrl+R>, <type "java ">, <enter>`
@@ -30,7 +30,7 @@ You must see a pattern by now with `<Ctrl+R>`.  It is very useful for searching 
   
 4. Edit the code file to fix the failing test 
 
-  ![image](https://user-images.githubusercontent.com/120623425/221475554-e71ceb9c-8362-42ae-ac94-07cb1c015d1b.png)
+![image](https://user-images.githubusercontent.com/120623425/221475554-e71ceb9c-8362-42ae-ac94-07cb1c015d1b.png)
   
 Keys pressed for editting: `<^R>, <"na">, <enter>` 
   
