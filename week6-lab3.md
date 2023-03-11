@@ -1,7 +1,7 @@
 Exploring the `find` Command
 ----------------------------
 
-In this lab report, I will listing **4** ways to use `find` and give examples using the `./written_2/` directory and its files.
+In this lab report, I will be listing **4** ways to use `find` and give examples using the `./written_2/` directory and its files.
 Information from [this guide](https://kb.iu.edu/d/admm#:~:text=Use%20the%20Unix%20find%20command%20to%20search%20for,a%20filename%20or%20matching%20expression%2C%20such%20as%20%22%2A.txt%22.), [GNU](https://www.gnu.org/software/findutils/manual/html_mono/find.html), [plesk](https://www.plesk.com/blog/various/find-files-in-linux-via-command-line/), [Redhat](https://www.redhat.com/sysadmin/linux-find-command) and `find --help`. 
 
 
@@ -18,7 +18,7 @@ $ find . -name Bahamas-History.txt
 ```
 ./travel_guides/berlitz2/Bahamas-History.txt
 ```
-For this option `-name`, I needed to know the exact file name because `-name` is case-sensitive. However since I did not remember which sub-directory the file is in, I use `.` from this and the `.` tells `find` to look through the current directory `written_2/` and sub-directories for the Bahamas-History.txt file.  
+For this option `-name`, I needed to know the exact file name because `-name` is case-sensitive. However, since I did not remember which sub-directory the file is in, I use `.` from this and the `.` tells `find` to look through the current directory `written_2/` and sub-directories for the Bahamas-History.txt file.  
 
 **Example 2:**
 
