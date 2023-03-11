@@ -2,7 +2,7 @@ Exploring the `find` Command
 ----------------------------
 
 In this lab report, I will listing **4** ways to use `find` and give examples using the `./written_2/` directory and its files.
-Information from [this guide](https://kb.iu.edu/d/admm#:~:text=Use%20the%20Unix%20find%20command%20to%20search%20for,a%20filename%20or%20matching%20expression%2C%20such%20as%20%22%2A.txt%22.), [GNU](https://www.gnu.org/software/findutils/manual/html_mono/find.html), [plesk](https://www.plesk.com/blog/various/find-files-in-linux-via-command-line/) and `find --help`. [Redhat](https://www.redhat.com/sysadmin/linux-find-command)
+Information from [this guide](https://kb.iu.edu/d/admm#:~:text=Use%20the%20Unix%20find%20command%20to%20search%20for,a%20filename%20or%20matching%20expression%2C%20such%20as%20%22%2A.txt%22.), [GNU](https://www.gnu.org/software/findutils/manual/html_mono/find.html), [plesk](https://www.plesk.com/blog/various/find-files-in-linux-via-command-line/), [Redhat](https://www.redhat.com/sysadmin/linux-find-command) and `find --help`. 
 
 
 > 📌1. Searching for a File
@@ -12,14 +12,13 @@ Information from [this guide](https://kb.iu.edu/d/admm#:~:text=Use%20the%20Unix%
 📩Command:
 ```
 $ find . -name Bahamas-History.txt
-
 ```
 
 ⬅️Output:
 ```
 ./travel_guides/berlitz2/Bahamas-History.txt
 ```
-For this command, I needed to know the exact file name. However since I did not remember which sub-directory the file is in, I use `.` from this and the `.` tells `find` to look through the current (written_2/) and sub-directories for the Bahamas-History.txt file.  
+For this command, I needed to know the exact file name. However since I did not remember which sub-directory the file is in, I use `.` from this and the `.` tells `find` to look through the current directory `written_2/` and sub-directories for the Bahamas-History.txt file.  
 
 **Example 2:**
 
@@ -34,7 +33,7 @@ find . -iname "*Bahamas*txt"
 ./travel_guides/berlitz2/Bahamas-WhatToDo.txt
 ./travel_guides/berlitz2/Bahamas-WhereToGo.txt
 ```
-Here `find` looks at a directory called non-fiction within the written_2/ directory (the current working directory) and returns matches of .txt files with Bahamas in the name. `iname` means not case-sensitive so if there was a file with lowercase "Bahamas", it would also be returned.
+Here `find` looks at a directory called non-fiction within the `written_2` (the current working directory) and returns matches of `.txt` files with Bahamas in the name. `iname` means not case-sensitive so if there was a file with lowercase "Bahamas", it would also be returned.
 
 This could be useful for someone who doesn't exactly know a file name.
 
@@ -56,7 +55,7 @@ non-fiction/OUP/Abernathy/ch1.txt
 non-fiction/OUP/Abernathy/ch14.txt
     ....(more files)....
 ```
-Here `find` looks at a directory called non-fiction within the written_2/ directory (the current working directory) and returns everything in that sub-directory.
+Here `find` looks at a directory called non-fiction within the `written_2` (the current working directory) and returns everything in that sub-directory.
 
 This could be useful for someone who wants to view what files and other sub-directories are in a directory.
 
@@ -78,7 +77,7 @@ travel_guides/berlitz1/HistoryGreek.txt
 travel_guides/berlitz1/HistoryHawaii.txt
 (etc)
 ```
-Here `find` is looking through the `travel_guides` directory for files that contain "History" and "txt" in the name. This is useful for someone who wants to specifically look at a directory, trying to look for a file they vaguely know exists. 
+Here `find` is looking through the `travel_guides` directory for files that contain the pattern "History" and "txt" in the name. This is useful for someone who wants to specifically look at a directory, trying to look for a file they vaguely know exists. 
 
 > 📌3. What's your type?
 
@@ -103,7 +102,7 @@ find -type d
 ./travel_guides/berlitz1
 ./travel_guides/berlitz2
 ```
-This `find` option returns a list of directories. In this case, starting within the `written_2` directory, all sub-directories are returned.
+This `find` option returns a list of directories specified by `-type d`. In this case, starting within the `written_2` directory, all sub-directories are returned.
 
 This is useful if someone wants to know what kinds of directories and sub-directories exist, and only directories.
 
@@ -125,7 +124,7 @@ find -type f
 ./non-fiction/OUP/Abernathy/ch8.txt
 (etc)
 ```
-This `find` option returns all the files in the written_2/ directory and sub-directories. This is useful for when one desires a list of all files and only files.
+This `find` option returns all the files in the `written_2` and sub-directories because I gave the option `-type f`. This is useful for when one desires a list of all files and only files.
 
 > 📌4. Stalker much?
 
