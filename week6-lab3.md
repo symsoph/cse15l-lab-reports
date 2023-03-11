@@ -1,8 +1,8 @@
-Exploring the `find` Command
+🔎Exploring the `find` Command🔍
 ----------------------------
 
 In this lab report, I will be listing **4** ways to use `find` and give examples using the `./written_2/` directory and its files.
-Information from [this guide](https://kb.iu.edu/d/admm#:~:text=Use%20the%20Unix%20find%20command%20to%20search%20for,a%20filename%20or%20matching%20expression%2C%20such%20as%20%22%2A.txt%22.), [GNU](https://www.gnu.org/software/findutils/manual/html_mono/find.html), [plesk](https://www.plesk.com/blog/various/find-files-in-linux-via-command-line/), [Redhat](https://www.redhat.com/sysadmin/linux-find-command) and `find --help`. 
+Information for this report from [this guide](https://kb.iu.edu/d/admm#:~:text=Use%20the%20Unix%20find%20command%20to%20search%20for,a%20filename%20or%20matching%20expression%2C%20such%20as%20%22%2A.txt%22.), [GNU](https://www.gnu.org/software/findutils/manual/html_mono/find.html), [plesk](https://www.plesk.com/blog/various/find-files-in-linux-via-command-line/), [Redhat](https://www.redhat.com/sysadmin/linux-find-command) and `find --help`. 
 
 
 > 📌1. Searching for a File
@@ -18,7 +18,7 @@ $ find . -name Bahamas-History.txt
 ```
 ./travel_guides/berlitz2/Bahamas-History.txt
 ```
-For this option `-name`, I needed to know the exact file name because `-name` is case-sensitive. However, since I did not remember which sub-directory the file is in, I use `.` from this and the `.` tells `find` to look through the current directory `written_2/` and sub-directories for the Bahamas-History.txt file.  
+For this option `-name`, I needed to know the exact file name because `-name` is case-sensitive. However, since I did not remember which sub-directory the file is in, I use `.` for this and the `.` tells `find` to look through the current directory `written_2/` and sub-directories for the Bahamas-History.txt file.  
 
 **Example 2:**
 
@@ -33,7 +33,7 @@ find . -iname "*Bahamas*txt"
 ./travel_guides/berlitz2/Bahamas-WhatToDo.txt
 ./travel_guides/berlitz2/Bahamas-WhereToGo.txt
 ```
-Here `find` looks at a directory called non-fiction within the `written_2` (the current working directory) and returns matches of `.txt` files with Bahamas in the name. `-iname` means not case-sensitive so if there was a file with lowercase "Bahamas", it would also be returned.
+Here `find` looks at a directory called `non-fiction` within the `written_2` (the current working directory) and returns matches of `.txt` files with Bahamas in the name. `-iname` means not case-sensitive so if there was a file with lowercase "Bahamas", it would also be returned.
 
 This could be useful for someone who doesn't exactly know a file name.
 
@@ -55,7 +55,7 @@ non-fiction/OUP/Abernathy/ch1.txt
 non-fiction/OUP/Abernathy/ch14.txt
     ....(more files)....
 ```
-Here `find` looks at a directory called non-fiction within the `written_2` (the current working directory) and returns everything in that sub-directory.
+Here `find` looks at a directory called `non-fiction` within the `written_2` (the current working directory) and returns everything in that sub-directory.
 
 This could be useful for someone who wants to view what files and other sub-directories are in a directory.
 
