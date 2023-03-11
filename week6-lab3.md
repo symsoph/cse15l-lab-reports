@@ -18,7 +18,7 @@ $ find . -name Bahamas-History.txt
 ```
 ./travel_guides/berlitz2/Bahamas-History.txt
 ```
-For this command, I needed to know the exact file name. However since I did not remember which sub-directory the file is in, I use `.` from this and the `.` tells `find` to look through the current directory `written_2/` and sub-directories for the Bahamas-History.txt file.  
+For this option `-name`, I needed to know the exact file name because `-name` is case-sensitive. However since I did not remember which sub-directory the file is in, I use `.` from this and the `.` tells `find` to look through the current directory `written_2/` and sub-directories for the Bahamas-History.txt file.  
 
 **Example 2:**
 
@@ -33,7 +33,7 @@ find . -iname "*Bahamas*txt"
 ./travel_guides/berlitz2/Bahamas-WhatToDo.txt
 ./travel_guides/berlitz2/Bahamas-WhereToGo.txt
 ```
-Here `find` looks at a directory called non-fiction within the `written_2` (the current working directory) and returns matches of `.txt` files with Bahamas in the name. `iname` means not case-sensitive so if there was a file with lowercase "Bahamas", it would also be returned.
+Here `find` looks at a directory called non-fiction within the `written_2` (the current working directory) and returns matches of `.txt` files with Bahamas in the name. `-iname` means not case-sensitive so if there was a file with lowercase "Bahamas", it would also be returned.
 
 This could be useful for someone who doesn't exactly know a file name.
 
