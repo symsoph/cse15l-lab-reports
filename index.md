@@ -1,14 +1,5 @@
 # Well Hello There
 
-> *About me*
->
-Some goals for this winter quarter:
-
-* get a viola
-* higher GPA
-* get a job?
-* have more fun !
-
 Labs
 ------------------
 
@@ -19,5 +10,7 @@ Labs
 [Lab 3](https://symsoph.github.io/cse15l-lab-reports/week6-lab3.html)
 
 [Lab 4](https://symsoph.github.io/cse15l-lab-reports/week8-lab4.html)
+
+[Lab 5](https://symsoph.github.io/cse15l-lab-reports/week9-lab5.html)
 
 
