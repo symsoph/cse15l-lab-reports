@@ -1,6 +1,6 @@
 # Lab Reports for CSE15L
 CSE15L is about software tools and techniques from using the command line to writing Bash scripts and creating local servers.  
-------------------
+# 
 
 [Lab 1 - Remote Access Server Tutorial](https://symsoph.github.io/cse15l-lab-reports/week1-lab-tutorial.html)
 
